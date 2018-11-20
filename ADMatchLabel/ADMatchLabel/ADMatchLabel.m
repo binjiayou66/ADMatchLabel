@@ -16,11 +16,11 @@ static NSString *const ADMatchLabelPatternAt = @"@[\\u4e00-\\u9fa5a-zA-Z0-9_-]{2
 
 @interface ADMatchLabel ()<NSLayoutManagerDelegate>
 
-/// NSAttributedString 子类 设置文本统一使用
+/// Model
 @property (nonatomic, strong) NSTextStorage *textStorage;
-/// 布局管理器 负责 字形 布局
+/// Controller
 @property (nonatomic, strong) NSLayoutManager *layoutManager;
-/// 绘制区域
+/// View
 @property (nonatomic, strong) NSTextContainer *textContainer;
 
 @end
@@ -85,7 +85,6 @@ static NSString *const ADMatchLabelPatternAt = @"@[\\u4e00-\\u9fa5a-zA-Z0-9_-]{2
     NSRange range = [self.layoutManager glyphRangeForTextContainer:self.textContainer];
     CGRect usedRect = [self.layoutManager usedRectForTextContainer:self.textContainer];
     CGPoint offset = [self _offsetWithDrawSize:usedRect.size];
-    NSLog(@"---- %@ --- %@", NSStringFromCGSize(self.textContainer.size), NSStringFromCGRect(usedRect));
     [self.layoutManager drawBackgroundForGlyphRange:range atPoint:offset];
     [self.layoutManager drawGlyphsForGlyphRange:range atPoint:offset];
 }

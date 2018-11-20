@@ -22,8 +22,12 @@
     
     NSString *text = nil;
     if (1) {
+        // use this string can draw text in right way. :)
+        // correct usedRectForTextContainer height, logged in ADMatchLabel.m line 88.
         text = @"今天 10:26 来自 微博 weibo.com#蒋劲夫承认家暴#并道歉：“这一个月一直在忏悔和悔恨中度过”。蒋劲夫日本留学期间曾卷入“出柜”疑云，后与日籍女友公开恋情，同游母校、一起庆生、为爱纹身";
     } else {
+        // use this string can not draw text in right way. :(
+        // incorrect usedRectForTextContainer height, logged in ADMatchLabel.m line 88.
         text = @"今天 10:26 来自 微博 weibo.com#蒋劲夫承认家暴#并道歉：“这一个月一直在忏悔和悔恨中度过”。蒋劲夫日本留学期间曾卷入“出柜”疑云，后与日籍女友公开恋情，同游母校、一起庆生、为爱纹身，恩爱甜蜜";
     }
     CGSize size = [text boundingRectWithSize:CGSizeMake(self.view.bounds.size.width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:18]} context:nil].size;

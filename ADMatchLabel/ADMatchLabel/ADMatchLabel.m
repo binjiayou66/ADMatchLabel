@@ -120,23 +120,6 @@ static NSString *const ADMatchLabelPatternAt = @"@[\\u4e00-\\u9fa5a-zA-Z0-9_-]{2
     }
 }
 
-#pragma mark - NSLayoutManagerDelegate
-
-- (BOOL)layoutManager:(NSLayoutManager *)layoutManager shouldBreakLineByWordBeforeCharacterAtIndex:(NSUInteger)charIndex
-{
-    return YES;
-}
-
-- (CGFloat)layoutManager:(NSLayoutManager *)layoutManager lineSpacingAfterGlyphAtIndex:(NSUInteger)glyphIndex withProposedLineFragmentRect:(CGRect)rect
-{
-    return floorf(glyphIndex / 100);
-}
-
-- (CGFloat)layoutManager:(NSLayoutManager *)layoutManager paragraphSpacingAfterGlyphAtIndex:(NSUInteger)glyphIndex withProposedLineFragmentRect:(CGRect)rect
-{
-    return 10;
-}
-
 #pragma mark - private method
 
 - (void)_initializeEnvironment

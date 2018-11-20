@@ -14,7 +14,7 @@
 		A1B519C121A3E05600B7AFDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B519BF21A3E05600B7AFDF /* LaunchScreen.storyboard */; };
 		A1B519C421A3E05600B7AFDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B519C321A3E05600B7AFDF /* main.m */; };
 		A1B519CE21A3E05600B7AFDF /* ADMatchLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B519CD21A3E05600B7AFDF /* ADMatchLabelTests.m */; };
-		A1B519E121A3EC2000B7AFDF /* ADMatchLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B519DF21A3EC2000B7AFDF /* ADMatchLabel.m */; };
+		A1B519E521A3FE5900B7AFDF /* ADMatchLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B519E321A3FE5900B7AFDF /* ADMatchLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		A1B519C921A3E05600B7AFDF /* ADMatchLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADMatchLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B519CD21A3E05600B7AFDF /* ADMatchLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADMatchLabelTests.m; sourceTree = "<group>"; };
 		A1B519CF21A3E05600B7AFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1B519DF21A3EC2000B7AFDF /* ADMatchLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMatchLabel.m; sourceTree = "<group>"; };
-		A1B519E021A3EC2000B7AFDF /* ADMatchLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMatchLabel.h; sourceTree = "<group>"; };
+		A1B519E321A3FE5900B7AFDF /* ADMatchLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMatchLabel.m; sourceTree = "<group>"; };
+		A1B519E421A3FE5900B7AFDF /* ADMatchLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMatchLabel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 		A1B519B321A3E05400B7AFDF /* ADMatchLabel */ = {
 			isa = PBXGroup;
 			children = (
-				A1B519D821A3E0C700B7AFDF /* ADMatchLabel */,
+				A1B519E221A3FE5900B7AFDF /* ADMatchLabel */,
 				A1B519B421A3E05400B7AFDF /* AppDelegate.h */,
 				A1B519B521A3E05400B7AFDF /* AppDelegate.m */,
 				A1B519B721A3E05400B7AFDF /* ViewController.h */,
@@ -107,11 +107,11 @@
 			path = ADMatchLabelTests;
 			sourceTree = "<group>";
 		};
-		A1B519D821A3E0C700B7AFDF /* ADMatchLabel */ = {
+		A1B519E221A3FE5900B7AFDF /* ADMatchLabel */ = {
 			isa = PBXGroup;
 			children = (
-				A1B519E021A3EC2000B7AFDF /* ADMatchLabel.h */,
-				A1B519DF21A3EC2000B7AFDF /* ADMatchLabel.m */,
+				A1B519E421A3FE5900B7AFDF /* ADMatchLabel.h */,
+				A1B519E321A3FE5900B7AFDF /* ADMatchLabel.m */,
 			);
 			path = ADMatchLabel;
 			sourceTree = "<group>";
@@ -219,7 +219,7 @@
 				A1B519B921A3E05400B7AFDF /* ViewController.m in Sources */,
 				A1B519C421A3E05600B7AFDF /* main.m in Sources */,
 				A1B519B621A3E05400B7AFDF /* AppDelegate.m in Sources */,
-				A1B519E121A3EC2000B7AFDF /* ADMatchLabel.m in Sources */,
+				A1B519E521A3FE5900B7AFDF /* ADMatchLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

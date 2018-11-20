@@ -223,7 +223,7 @@ static NSString *const ADMatchLabelPatternAt = @"@[\\u4e00-\\u9fa5a-zA-Z0-9_-]{2
         _textContainer.maximumNumberOfLines = self.numberOfLines;
         _textContainer.lineBreakMode = self.lineBreakMode;
         _textContainer.lineFragmentPadding = 0.0f;
-        _textContainer.size = self.frame.size;
+        _textContainer.size = self.bounds.size;
     }
     return _textContainer;
 }
